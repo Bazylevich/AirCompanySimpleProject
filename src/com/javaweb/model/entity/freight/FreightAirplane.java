@@ -1,6 +1,5 @@
 package com.javaweb.model.entity.freight;
 
-
 import com.javaweb.controller.InitializeAirplanes;
 import com.javaweb.model.entity.Aircraft;
 

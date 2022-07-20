@@ -5,15 +5,6 @@ import com.javaweb.model.entity.ModelAirlineCompany;
 import com.javaweb.model.entity.Aircraft;
 import com.javaweb.view.View;
 
-/**
- * Main.java
- * <p>
- * Start point of the Electronic Notebook.
- * Here we will start controller {@link Controller}
- *
- * @author Andrii Chernysh
- * @version 1.0, 18 Nov 2016
- */
 public class Main {
     public static void main(String[] args) {
         /*ResourceBundle bundle = ResourceBundle.getBundle("com/javaweb/AircraftParameters");

@@ -13,16 +13,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-/**
- * Main.java
- * <p>
- * Test class, that is needed to test {@link ModelAirlineCompanyTest}
- * There are methods, that works with container, that includes
- * different types of airlines.
- *
- * @author Andrii Chernysh
- * @version 1.0, 18 Nov 2016
- */
 public class ModelAirlineCompanyTest {
     private ModelAirlineCompanyTest<Aircraft> airlineCompany;
 

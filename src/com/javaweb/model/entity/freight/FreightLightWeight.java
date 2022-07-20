@@ -5,7 +5,6 @@ import com.javaweb.controller.InitializeAirplanes;
 public class FreightLightWeight extends FreightAirplane {
     private boolean isUsingForJumping;
     private boolean isPostal;
-
     public FreightLightWeight(InitializeAirplanes init) {
         super(init);
         this.isPostal = init.isPostal();

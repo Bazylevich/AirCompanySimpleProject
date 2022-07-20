@@ -1,6 +1,4 @@
 package com.javaweb.model.entity.agricultural;
-
-
 import com.javaweb.controller.InitializeAirplanes;
 
 public class AgriculturalMonoplane extends AgriculturalAirplane {
