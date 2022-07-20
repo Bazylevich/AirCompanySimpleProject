@@ -3,79 +3,26 @@ import com.javaweb.controller.InitializeAirplanes;
 
 import java.util.ResourceBundle;
 
-/**
- * Aircraft.java
- * <p>
- * Abstract class that is parent for all
- * airplanes in this factory. Here are initialization
- * of all basic parameters of airplane.
- *
- * @author Andrii Chernysh
- * @version 1.0, 18 Nov 2016
- */
 public abstract class Aircraft {
-    /**
-     * Name of some airplane
-     */
     private String name;
-    /**
-     * Type of airplane from hierarchy {@link AirplaneType}
-     */
     private AirplaneType airplaneType;
-    /**
-     * Country, that produced airplane {@link ManufacturerCountry}
-     */
     private ManufacturerCountry manufacturerCountry;
-    /**
-     * Amount of engines, that airplane can have
-     */
     private int engineQuantity;
-    /**
-     * Maximal speed of airplane
-     */
     private double maxSpeed;
-    /**
-     * Is this aircraft has pilot or not
-     */
     private boolean hasPilot;
-    /**
-     * Price of aircraft in dollars
-     */
     private long price;
-    /**
-     * Fuel consumption of aircraft in g/pass-km
-     */
     private double fuelConsumption;
-    /**
-     * Range, that airplane can fly in km
-     */
     private double rangeOfFlight;
-    /**
-     * Total passenger capacity in aircraft
-     */
     private int passengerCapacity;
-    /**
-     * Total carrying capacity in aircraft
-     */
     private double carryingCapacity;
 
     protected ResourceBundle bundle
             = ResourceBundle.getBundle("com/javaweb/AircraftParameters");
 
-    /**
-     * Enum class, that defines all countries, that can
-     * produce some aircraft
-     */
     public enum ManufacturerCountry {
         USSR, FRANCE, USA, GERMANY
     }
 
-    /**
-     * Constructor, that initialise all fields using
-     * parameter init.
-     *
-     * @param init - initialise values for some airplane
-     */
     public Aircraft(InitializeAirplanes init) {
         setName(init.name());
         setAirplaneType(init.getAirplaneType());
@@ -178,7 +125,6 @@ public abstract class Aircraft {
         return airplaneType;
     }
 
-    @Override
     public String toString() {
         return String.format(bundle.getString("NAME_OF_AIRCRAFT"),name)  +
                 String.format(bundle.getString("AIRPLANE_TYPE"),airplaneType) +

@@ -1,7 +1,7 @@
 package com.javaweb;
 
 import com.javaweb.controller.Controller;
-import com.javaweb.model.ModelAirlineCompany;
+import com.javaweb.model.entity.ModelAirlineCompany;
 import com.javaweb.model.entity.Aircraft;
 import com.javaweb.view.View;
 

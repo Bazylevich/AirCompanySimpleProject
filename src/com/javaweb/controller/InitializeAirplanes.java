@@ -3,15 +3,6 @@ package com.javaweb.controller;
 import com.javaweb.model.entity.Aircraft;
 import com.javaweb.model.entity.AirplaneType;
 
-/**
- * InitializeAirplanes.java
- * <p>
- * Class that contains all init values for Airplanes.
- * Here are different types of airplanes
- *
- * @author Andrii Chernysh
- * @version 1.0, 18 Nov 2016
- */
 public enum InitializeAirplanes {
     AN_2СХ(AirplaneType.AGRICULTURAL_BIPLANE,
             Aircraft.ManufacturerCountry.USSR, 1, 254, true, 2000,
